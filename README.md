@@ -1,19 +1,43 @@
-# Vergabetool (VgV)
+# 💼 VgV-Verfahren – Digitale Teilnahme & Bewertung
 
-Ein webbasiertes Vergabe- und Antragsmanagement-Tool für VgV-Verfahren.
+Dieses Projekt unterstützt das Vergabeverfahren nach VgV durch eine webbasierte Django-Anwendung. Es ermöglicht Bieter:innen die digitale Abgabe von Teilnahmeanträgen und Vergabestellen die strukturierte Auswertung.
 
-## Funktionen
+---
 
-- Login & Registrierung mit Rollen (Bieter/Vergabestelle)
-- Digitales Teilnahmeantragsformular (Teil 1–4)
-- Upload von Nachweisen (mit Formatprüfung)
-- Bewertungs- und Verwaltungsfunktionen
-- Exportmöglichkeiten (JSON, PDF, ZIP optional)
-- Umsetzung mit Django (Python)
+## 🎯 Ziel des Projekts
 
-## Lokale Nutzung
+Ziel ist es, die Anforderungen des VgV-Verfahrens digital abzubilden und eine effiziente, nutzerfreundliche Lösung zu entwickeln. Dabei werden:
+- Excel-Formulare ersetzt
+- Anträge digital eingereicht
+- Nachweise verwaltet
+- Bewertungen vorbereitet
+
+---
+
+## 👤 Rollen im System
+
+| Rolle           | Funktion                                                                 |
+|----------------|--------------------------------------------------------------------------|
+| **Bieter:in**       | Einreichung von Anträgen, Upload von Nachweisen                           |
+| **Vergabestelle**   | Sichtung, Bewertung und Verwaltung der Bewerbungen                        |
+
+---
+
+## 🧩 Funktionen
+
+- Upload von Teilnahmeanträgen & Nachweisen
+- Automatische Umsatzberechnung Netto/Brutto
+- Deadline-Erkennung
+- Rollenspezifisches Dashboard
+- Bewertungsvorbereitung
+
+---
+
+## 🚀 Lokale Nutzung mit Docker
+
+### 🔽 1. Image von Docker Hub laden
 
 ```bash
-git clone https://github.com/Yllnora/vergabetool.git
-cd vergabetool
-python manage.py runserver
+docker pull yllnora/vgvfinal:latest
+docker run -p 8000:8000 yllnora/vgvfinal:latest
+http://localhost:8000

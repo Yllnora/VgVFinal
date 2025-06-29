@@ -1,0 +1,13 @@
+# Ignore Python virtual environment folder
+.venv/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# MacOS metadata
+.DS_Store
+
+# Editor backups
+*~vergabetool.tar
+vergabetool.tar
